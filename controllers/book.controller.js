@@ -1,5 +1,9 @@
 import { prisma } from '../config/prisma.js'
-import { searchData } from '../utils/searchV1.js'
+import { getCache, setCache } from '../utils/cache.js'
+
+const CACHE_TTL = 3600
+const BOOKS_CACHE_KEY = 'books:all'
+const SEARCH_CACHE_PREFIX = 'books:search'
 
 const createBook = async (req, res) => {
   try {
@@ -54,11 +58,28 @@ const createBooks = async (req, res) => {
 
 const getBooks = async (req, res) => {
   try {
+    // 1. check cache
+    const cachedBooks = await getCache(BOOKS_CACHE_KEY)
+    if (cachedBooks) {
+        return res.status(200).json({
+            success: true,
+            message: 'data fetched successfully',
+            source: 'cache',
+            data: cachedBooks,
+            count: cachedBooks.length
+        })
+    }
+
+    // 2. fetch from db
     const books = await prisma.books.findMany()
+
+    // 3. set to cache
+    await setCache(BOOKS_CACHE_KEY, books, CACHE_TTL)
 
     res.status(200).json({
       success: true,
       message: 'data fetched successfully',
+      source: 'db',
       data: books,
       count: books.length
     })

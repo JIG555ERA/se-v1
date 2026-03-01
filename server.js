@@ -16,3 +16,7 @@ app.use(express.json())
 app.use('/api/v1/books', bookRoutes)
 
 export default app;
+
+// app.listen(PORT, () => {
+//     console.log(`Server is runnnig on http://localhost${PORT}/api/v1/books/`)
+// })

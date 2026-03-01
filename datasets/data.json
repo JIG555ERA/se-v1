@@ -1,0 +1,122 @@
+[
+  {
+    "ISBN": "9780060934347",
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "description": "A satirical take on chivalry and the first modern novel.",
+    "category": "Classics",
+    "genre": "Fiction"
+  },
+  {
+    "ISBN": "9780141439518",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "description": "A social critique of 19th-century British gentry and marriage.",
+    "category": "Classics",
+    "genre": "Romance"
+  },
+  {
+    "ISBN": "9780141439556",
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "description": "A dark tale of passion and revenge on the Yorkshire moors.",
+    "category": "Classics",
+    "genre": "Gothic Fiction"
+  },
+  {
+    "ISBN": "9780141439600",
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "description": "An epic struggle between man and a white whale.",
+    "category": "Classics",
+    "genre": "Adventure"
+  },
+  {
+    "ISBN": "9780142437230",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "description": "The internal struggle of an orphaned girl seeking independence.",
+    "category": "Classics",
+    "genre": "Bildungsroman"
+  },
+  {
+    "ISBN": "9780140449266",
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoyevsky",
+    "description": "A psychological exploration of guilt and redemption.",
+    "category": "Classics",
+    "genre": "Psychological Fiction"
+  },
+  {
+    "ISBN": "9780140447941",
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "description": "A sweeping narrative of adultery and social change in Russia.",
+    "category": "Classics",
+    "genre": "Realism"
+  },
+  {
+    "ISBN": "9780141182704",
+    "title": "Ulysses",
+    "author": "James Joyce",
+    "description": "A modernist retelling of the Odyssey set in one day in Dublin.",
+    "category": "Classics",
+    "genre": "Modernism"
+  },
+  {
+    "ISBN": "9780140447934",
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "description": "The intersection of private lives and Napoleonic history.",
+    "category": "Classics",
+    "genre": "Historical Fiction"
+  },
+  {
+    "ISBN": "9780451524935",
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian vision of totalitarianism and surveillance.",
+    "category": "Classics",
+    "genre": "Dystopian"
+  },
+  {
+    "ISBN": "9780060850524",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A story of racial injustice in the American South.",
+    "category": "Classics",
+    "genre": "Southern Gothic"
+  },
+  {
+    "ISBN": "9780743273565",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A critique of the American Dream in the Roaring Twenties.",
+    "category": "Classics",
+    "genre": "Modernism"
+  },
+  {
+    "ISBN": "9780140283334",
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "description": "The multi-generational story of the Buendía family.",
+    "category": "Classics",
+    "genre": "Magical Realism"
+  },
+  {
+    "ISBN": "9780141187761",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "description": "A teenager's rebellion against the \"phoniness\" of society.",
+    "category": "Classics",
+    "genre": "Literary Fiction"
+  },
+  {
+    "ISBN": "9780141182599",
+    "title": "Lolita",
+    "author": "Vladimir Nabokov",
+    "description": "A controversial exploration of obsession and aesthetics.",
+    "category": "Classics",
+    "genre": "Literary Fiction"
+  }
+]
