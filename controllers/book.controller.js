@@ -1,5 +1,5 @@
 import { prisma } from '../config/prisma.js'
-import { getCache, setCache } from '../utils/cache.js'
+import { getCache, setCache, deleteCache, deleteByPattern } from '../utils/cache.js'
 
 const CACHE_TTL = 3600
 const BOOKS_CACHE_KEY = 'books:all'
@@ -19,6 +19,10 @@ const createBook = async (req, res) => {
         genre,
       },
     })
+
+    // invalidate cache
+    await deleteCache(BOOKS_CACHE_KEY)
+    await deleteByPattern(`${SEARCH_CACHE_PREFIX}`)
 
     res.status(201).json({
       success: true,
@@ -95,6 +99,11 @@ const deleteBooks = async (req, res) => {
     try {
         const result = await prisma.books.deleteMany();
 
+        // invalidate cache
+
+        await deleteCache(BOOKS_CACHE_KEY);
+        await deleteByPattern(`${SEARCH_CACHE_PREFIX}`)
+
         res.status(200).json({
             success: true,
             message: 'table cleared successfully',
@@ -120,6 +129,20 @@ const search = async (req, res) => {
             })
         }
 
+        const cacheKey = await `${SEARCH_CACHE_PREFIX}${q}:${PAGE}:${LIMIT}`
+
+        // 1. check cache
+        const cachedResult = await getCache(cacheKey)
+        if (cachedResult) {
+            return res.status(200).json({
+                success: true,
+                message: 'search result from cache',
+                source: 'cache',
+                data: cachedResult,
+                count: cachedResult.length
+            })
+        }
+
         const tokens = q
         .trim()
         .toLowerCase()
@@ -139,6 +162,7 @@ const search = async (req, res) => {
             }))
         }
 
+        // 2. fetch from db
         const result = await prisma.books.findMany({
             where,
             orderBy: { title: 'asc' },
@@ -146,9 +170,14 @@ const search = async (req, res) => {
             take: Number(limit)
         })
 
+        // 3. cache search result
+        await setCache(cacheKey, result, CACHE_TTL)
+
         res.status(200).json({
             success: true,
-            message: result,
+            message: 'data fetched successfully',
+            source: 'db',
+            data: result,
             count: result.length,
             page: Number(page)
         })
