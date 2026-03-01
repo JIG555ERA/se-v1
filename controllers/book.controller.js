@@ -129,7 +129,7 @@ const search = async (req, res) => {
             })
         }
 
-        const cacheKey = await `${SEARCH_CACHE_PREFIX}${q}:${PAGE}:${LIMIT}`
+        const cacheKey = await `${SEARCH_CACHE_PREFIX}${q}:${page}:${limit}`
 
         // 1. check cache
         const cachedResult = await getCache(cacheKey)

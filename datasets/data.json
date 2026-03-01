@@ -1,122 +1,371 @@
 [
-  {
-    "ISBN": "9780060934347",
-    "title": "Don Quixote",
-    "author": "Miguel de Cervantes",
-    "description": "A satirical take on chivalry and the first modern novel.",
-    "category": "Classics",
-    "genre": "Fiction"
-  },
-  {
-    "ISBN": "9780141439518",
-    "title": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "description": "A social critique of 19th-century British gentry and marriage.",
-    "category": "Classics",
-    "genre": "Romance"
-  },
-  {
-    "ISBN": "9780141439556",
-    "title": "Wuthering Heights",
-    "author": "Emily Brontë",
-    "description": "A dark tale of passion and revenge on the Yorkshire moors.",
-    "category": "Classics",
-    "genre": "Gothic Fiction"
-  },
-  {
-    "ISBN": "9780141439600",
-    "title": "Moby Dick",
-    "author": "Herman Melville",
-    "description": "An epic struggle between man and a white whale.",
-    "category": "Classics",
-    "genre": "Adventure"
-  },
-  {
-    "ISBN": "9780142437230",
-    "title": "Jane Eyre",
-    "author": "Charlotte Brontë",
-    "description": "The internal struggle of an orphaned girl seeking independence.",
-    "category": "Classics",
-    "genre": "Bildungsroman"
-  },
-  {
-    "ISBN": "9780140449266",
-    "title": "Crime and Punishment",
-    "author": "Fyodor Dostoyevsky",
-    "description": "A psychological exploration of guilt and redemption.",
-    "category": "Classics",
-    "genre": "Psychological Fiction"
-  },
-  {
-    "ISBN": "9780140447941",
-    "title": "Anna Karenina",
-    "author": "Leo Tolstoy",
-    "description": "A sweeping narrative of adultery and social change in Russia.",
-    "category": "Classics",
-    "genre": "Realism"
-  },
-  {
-    "ISBN": "9780141182704",
-    "title": "Ulysses",
-    "author": "James Joyce",
-    "description": "A modernist retelling of the Odyssey set in one day in Dublin.",
-    "category": "Classics",
-    "genre": "Modernism"
-  },
-  {
-    "ISBN": "9780140447934",
-    "title": "War and Peace",
-    "author": "Leo Tolstoy",
-    "description": "The intersection of private lives and Napoleonic history.",
-    "category": "Classics",
-    "genre": "Historical Fiction"
-  },
-  {
-    "ISBN": "9780451524935",
-    "title": "1984",
-    "author": "George Orwell",
-    "description": "A dystopian vision of totalitarianism and surveillance.",
-    "category": "Classics",
-    "genre": "Dystopian"
-  },
-  {
-    "ISBN": "9780060850524",
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "description": "A story of racial injustice in the American South.",
-    "category": "Classics",
-    "genre": "Southern Gothic"
-  },
-  {
-    "ISBN": "9780743273565",
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "description": "A critique of the American Dream in the Roaring Twenties.",
-    "category": "Classics",
-    "genre": "Modernism"
-  },
-  {
-    "ISBN": "9780140283334",
-    "title": "One Hundred Years of Solitude",
-    "author": "Gabriel García Márquez",
-    "description": "The multi-generational story of the Buendía family.",
-    "category": "Classics",
-    "genre": "Magical Realism"
-  },
-  {
-    "ISBN": "9780141187761",
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "description": "A teenager's rebellion against the \"phoniness\" of society.",
-    "category": "Classics",
-    "genre": "Literary Fiction"
-  },
-  {
-    "ISBN": "9780141182599",
-    "title": "Lolita",
-    "author": "Vladimir Nabokov",
-    "description": "A controversial exploration of obsession and aesthetics.",
-    "category": "Classics",
-    "genre": "Literary Fiction"
-  }
+    {
+        "id": 37,
+        "ISBN": "9781455586691",
+        "title": "Deep Work",
+        "author": "Cal Newport",
+        "description": "Rules for focused success in a distracted world.",
+        "category": "Self-help",
+        "genre": "Productivity"
+    },
+    {
+        "id": 38,
+        "ISBN": "9780374533557",
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "description": "An exploration of the two systems that drive the way we think.",
+        "category": "Psychology",
+        "genre": "Cognitive Science"
+    },
+    {
+        "id": 39,
+        "ISBN": "9780857197689",
+        "title": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "description": "Timeless lessons on wealth, greed, and happiness.",
+        "category": "Finance",
+        "genre": "Behavioral Finance"
+    },
+    {
+        "id": 40,
+        "ISBN": "9780062316110",
+        "title": "Sapiens",
+        "author": "Yuval Noah Harari",
+        "description": "A brief history of humankind from ancient times to the modern age.",
+        "category": "History",
+        "genre": "Anthropology"
+    },
+    {
+        "id": 41,
+        "ISBN": "9780307887894",
+        "title": "Man's Search for Meaning",
+        "author": "Viktor Frankl",
+        "description": "A memoir and psychological exploration of life’s purpose.",
+        "category": "Psychology",
+        "genre": "Memoir"
+    },
+    {
+        "id": 42,
+        "ISBN": "9781501110368",
+        "title": "Start With Why",
+        "author": "Simon Sinek",
+        "description": "How great leaders inspire everyone to take action.",
+        "category": "Business",
+        "genre": "Leadership"
+    },
+    {
+        "id": 43,
+        "ISBN": "9780812981605",
+        "title": "The Power of Habit",
+        "author": "Charles Duhigg",
+        "description": "Why habits exist and how they can be changed.",
+        "category": "Self-help",
+        "genre": "Behavioral Science"
+    },
+    {
+        "id": 44,
+        "ISBN": "9780062457714",
+        "title": "Ikigai",
+        "author": "Héctor García",
+        "description": "The Japanese secret to a long and happy life.",
+        "category": "Lifestyle",
+        "genre": "Wellness"
+    },
+    {
+        "id": 45,
+        "ISBN": "9780143127741",
+        "title": "Grit",
+        "author": "Angela Duckworth",
+        "description": "The power of passion and perseverance.",
+        "category": "Psychology",
+        "genre": "Motivation"
+    },
+    {
+        "id": 46,
+        "ISBN": "9780307465351",
+        "title": "The 4-Hour Workweek",
+        "author": "Timothy Ferriss",
+        "description": "Strategies for escaping the 9–5 and living life on your terms.",
+        "category": "Business",
+        "genre": "Entrepreneurship"
+    },
+    {
+        "id": 47,
+        "ISBN": "9780060934347",
+        "title": "Don Quixote",
+        "author": "Miguel de Cervantes",
+        "description": "A satirical take on chivalry and the first modern novel.",
+        "category": "Classics",
+        "genre": "Fiction"
+    },
+    {
+        "id": 48,
+        "ISBN": "9780141439518",
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "description": "A social critique of 19th-century British gentry and marriage.",
+        "category": "Classics",
+        "genre": "Romance"
+    },
+    {
+        "id": 49,
+        "ISBN": "9780141439556",
+        "title": "Wuthering Heights",
+        "author": "Emily Brontë",
+        "description": "A dark tale of passion and revenge on the Yorkshire moors.",
+        "category": "Classics",
+        "genre": "Gothic Fiction"
+    },
+    {
+        "id": 50,
+        "ISBN": "9780141439600",
+        "title": "Moby Dick",
+        "author": "Herman Melville",
+        "description": "An epic struggle between man and a white whale.",
+        "category": "Classics",
+        "genre": "Adventure"
+    },
+    {
+        "id": 51,
+        "ISBN": "9780142437230",
+        "title": "Jane Eyre",
+        "author": "Charlotte Brontë",
+        "description": "The internal struggle of an orphaned girl seeking independence.",
+        "category": "Classics",
+        "genre": "Bildungsroman"
+    },
+    {
+        "id": 52,
+        "ISBN": "9780140449266",
+        "title": "Crime and Punishment",
+        "author": "Fyodor Dostoyevsky",
+        "description": "A psychological exploration of guilt and redemption.",
+        "category": "Classics",
+        "genre": "Psychological Fiction"
+    },
+    {
+        "id": 53,
+        "ISBN": "9780140447941",
+        "title": "Anna Karenina",
+        "author": "Leo Tolstoy",
+        "description": "A sweeping narrative of adultery and social change in Russia.",
+        "category": "Classics",
+        "genre": "Realism"
+    },
+    {
+        "id": 54,
+        "ISBN": "9780141182704",
+        "title": "Ulysses",
+        "author": "James Joyce",
+        "description": "A modernist retelling of the Odyssey set in one day in Dublin.",
+        "category": "Classics",
+        "genre": "Modernism"
+    },
+    {
+        "id": 55,
+        "ISBN": "9780140447934",
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "description": "The intersection of private lives and Napoleonic history.",
+        "category": "Classics",
+        "genre": "Historical Fiction"
+    },
+    {
+        "id": 56,
+        "ISBN": "9780451524935",
+        "title": "1984",
+        "author": "George Orwell",
+        "description": "A dystopian vision of totalitarianism and surveillance.",
+        "category": "Classics",
+        "genre": "Dystopian"
+    },
+    {
+        "id": 57,
+        "ISBN": "9780060850524",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "description": "A story of racial injustice in the American South.",
+        "category": "Classics",
+        "genre": "Southern Gothic"
+    },
+    {
+        "id": 58,
+        "ISBN": "9780743273565",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "description": "A critique of the American Dream in the Roaring Twenties.",
+        "category": "Classics",
+        "genre": "Modernism"
+    },
+    {
+        "id": 59,
+        "ISBN": "9780140283334",
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez",
+        "description": "The multi-generational story of the Buendía family.",
+        "category": "Classics",
+        "genre": "Magical Realism"
+    },
+    {
+        "id": 60,
+        "ISBN": "9780141187761",
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "description": "A teenager's rebellion against the \"phoniness\" of society.",
+        "category": "Classics",
+        "genre": "Literary Fiction"
+    },
+    {
+        "id": 61,
+        "ISBN": "9780141182599",
+        "title": "Lolita",
+        "author": "Vladimir Nabokov",
+        "description": "A controversial exploration of obsession and aesthetics.",
+        "category": "Classics",
+        "genre": "Literary Fiction"
+    },
+    {
+        "id": 77,
+        "ISBN": "9780735211292",
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "description": "A practical guide to building good habits and breaking bad ones.",
+        "category": "Self-help",
+        "genre": "Productivity"
+    },
+    {
+        "id": 78,
+        "ISBN": "9780062315007",
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "description": "A philosophical story about following your dreams.",
+        "category": "Fiction",
+        "genre": "Adventure"
+    },
+    {
+        "id": 79,
+        "ISBN": "9781612680194",
+        "title": "Rich Dad Poor Dad",
+        "author": "Robert Kiyosaki",
+        "description": "Lessons on financial literacy and wealth building.",
+        "category": "Finance",
+        "genre": "Personal Finance"
+    },
+    {
+        "id": 80,
+        "ISBN": "9780553380163",
+        "title": "The Power of Now",
+        "author": "Eckhart Tolle",
+        "description": "A guide to spiritual enlightenment and mindfulness.",
+        "category": "Self-help",
+        "genre": "Spiritual"
+    },
+    {
+        "id": 81,
+        "ISBN": "9780140449136",
+        "title": "Meditations",
+        "author": "Marcus Aurelius",
+        "description": "Personal writings of a Roman emperor on Stoic philosophy.",
+        "category": "Philosophy",
+        "genre": "Classic"
+    },
+    {
+        "id": 82,
+        "ISBN": "9780307474278",
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "description": "Explores the two systems that drive human thinking.",
+        "category": "Psychology",
+        "genre": "Cognitive Science"
+    },
+    {
+        "id": 83,
+        "ISBN": "9780061120084",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "description": "A novel about racial injustice in the Deep South.",
+        "category": "Fiction",
+        "genre": "Classic"
+    },
+    {
+        "id": 85,
+        "ISBN": "9780547928227",
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "description": "A fantasy adventure preceding The Lord of the Rings.",
+        "category": "Fiction",
+        "genre": "Fantasy"
+    },
+    {
+        "id": 87,
+        "ISBN": "9781501128035",
+        "title": "It Ends with Us",
+        "author": "Colleen Hoover",
+        "description": "A story about love, resilience, and difficult choices.",
+        "category": "Fiction",
+        "genre": "Romance"
+    },
+    {
+        "id": 88,
+        "ISBN": "9780385472579",
+        "title": "Zen and the Art of Motorcycle Maintenance",
+        "author": "Robert M. Pirsig",
+        "description": "A philosophical journey exploring quality and values.",
+        "category": "Philosophy",
+        "genre": "Memoir"
+    },
+    {
+        "id": 91,
+        "ISBN": "9780804139021",
+        "title": "Deep Work",
+        "author": "Cal Newport",
+        "description": "Rules for focused success in a distracted world.",
+        "category": "Productivity",
+        "genre": "Self-help"
+    },
+    {
+        "id": 92,
+        "ISBN": "9780262033848",
+        "title": "Introduction to Algorithms",
+        "author": "Thomas H. Cormen",
+        "description": "Comprehensive guide to algorithms and data structures.",
+        "category": "Technology",
+        "genre": "Computer Science"
+    },
+    {
+        "id": 93,
+        "ISBN": "9780132350884",
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "description": "A handbook of agile software craftsmanship.",
+        "category": "Technology",
+        "genre": "Programming"
+    },
+    {
+        "id": 94,
+        "ISBN": "9781491950296",
+        "title": "Designing Data-Intensive Applications",
+        "author": "Martin Kleppmann",
+        "description": "The big ideas behind reliable, scalable systems.",
+        "category": "Technology",
+        "genre": "Software Engineering"
+    },
+    {
+        "id": 95,
+        "ISBN": "9780201633610",
+        "title": "Design Patterns",
+        "author": "Erich Gamma",
+        "description": "Reusable object-oriented software design patterns.",
+        "category": "Technology",
+        "genre": "Programming"
+    },
+    {
+        "id": 96,
+        "ISBN": "9780131103627",
+        "title": "The C Programming Language",
+        "author": "Brian W. Kernighan",
+        "description": "Classic introduction to the C programming language.",
+        "category": "Technology",
+        "genre": "Programming"
+    }
 ]
