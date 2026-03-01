@@ -22,3 +22,12 @@ model Books {
   category    String
   genre       String
 }
+
+model ApiKey {
+  id String @id @default(uuid())
+  key String @unique
+  userName String?
+  isActive Boolean @default(true)
+  createdAt DateTime @default(now())
+  lastUsed DateTime?
+}
