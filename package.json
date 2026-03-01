@@ -1,35 +1,38 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "main": "server.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
-  },
-  "prisma": {
-    "seed": "node prisma/seed.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "nodemon": "^3.1.14",
-    "prisma": "^7.4.2"
-  },
-  "dependencies": {
-    "@faker-js/faker": "^10.3.0",
-    "@prisma/adapter-pg": "^7.4.2",
-    "@prisma/client": "^7.4.2",
-    "@types/node": "^25.3.2",
-    "body-parser": "^2.2.2",
-    "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "ioredis": "^5.10.0",
-    "pg": "^8.19.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
-  }
+    "name":  "server",
+    "version":  "1.0.0",
+    "main":  "server.js",
+    "type":  "module",
+    "scripts":  {
+                    "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
+                    "start":  "nodemon server.js",
+                    "postinstall":  "prisma generate"
+                },
+    "prisma":  {
+                   "seed":  "node prisma/seed.js"
+               },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "description":  "",
+    "devDependencies":  {
+                            "nodemon":  "^3.1.14",
+                            "prisma":  "^7.4.2"
+                        },
+    "dependencies":  {
+                         "@faker-js/faker":  "^10.3.0",
+                         "@prisma/adapter-pg":  "^7.4.2",
+                         "@prisma/client":  "^7.4.2",
+                         "@types/node":  "^25.3.2",
+                         "body-parser":  "^2.2.2",
+                         "cors":  "^2.8.6",
+                         "dotenv":  "^17.3.1",
+                         "express":  "^5.2.1",
+                         "ioredis":  "^5.10.0",
+                         "pg":  "^8.19.0",
+                         "ts-node":  "^10.9.2",
+                         "typescript":  "^5.9.3"
+                     }
 }
