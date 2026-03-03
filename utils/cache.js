@@ -19,3 +19,23 @@ export const deleteByPattern = async (pattern) => {
         await redis.del(keys)
     }
 }
+
+export const deleteBookCache = async (key) => {
+  let cursor = '0'
+
+  do {
+    const [nextCursor, keys] = await redis.scan(
+      cursor,
+      'MATCH',
+      `${key}:*`,
+      'COUNT',
+      100
+    )
+
+    cursor = nextCursor
+
+    if (keys.length > 0) {
+      await redis.del(...keys)
+    }
+  } while (cursor !== '0')
+}

@@ -7,6 +7,7 @@ dotenv.config()
 import bookRoutes from './routes/book.routes.js'
 import apiKeyRoutes from './routes/apikey.routes.js'
 import aiRoutes from './routes/ai.routes.js'
+import bookv2Routes from './routes/booksv2.routes.js'
 
 const PORT = process.env.PORT
 
@@ -32,6 +33,7 @@ app.get('/', (req, res) => {
     }
 })
 app.use('/api/v1/books', bookRoutes)
+app.use('/api/v2/books', bookv2Routes)
 app.use('/api/v1/apiKey', apiKeyRoutes)
 app.use('/api/v1/ai', aiRoutes)
 
