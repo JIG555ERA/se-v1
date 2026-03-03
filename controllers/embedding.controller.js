@@ -21,7 +21,7 @@ export const createEmbedding = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            embedding: output.data,
+            embedding: Array.from(output.data),
             dimension: output.data.length
         })
 
