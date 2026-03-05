@@ -45,3 +45,15 @@ model ApiKey {
   createdAt DateTime @default(now())
   lastUsed DateTime?
 }
+
+model Logs {
+  id Int @id @default(autoincrement())
+  ip String 
+  browser String
+  browser_v String
+  os String
+  os_v String
+  route String
+  method String
+  requested_at DateTime @default(now())
+}
