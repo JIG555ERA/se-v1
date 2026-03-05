@@ -40,5 +40,5 @@ app.use('/api/v1/ai', aiRoutes)
 export default app;
 
 // app.listen(PORT, () => {
-//     console.log(`Server is runnnig on http://localhost${PORT}/api/v1/books/`)
+//     console.log(`Server is runnnig on http://localhost${PORT}/api/`)
 // })
